@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Teórica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Prueba Semana 4</a>
+            <div class="navbar-nav">
+                <a class="nav-link active fw-bold" href="./index.html">Teórico</a>
+                <a class="nav-link text-white-50" href="./practica.html">Práctico</a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow-1">
+        <div class="container mt-5">
+            <h1 class="text-center text-primary fw-bold mb-5">PARTE TEÓRICA</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body">
+                            <div class="accordion" id="accordionTeoria">
+                                <div class="accordion-item mb-3 border-0 rounded shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed fw-semibold bg-white focus-ring focus-ring-primary-ring-primary"
+                                            data-bs-toggle="collapse" data-bs-target="#p1">
+                                            1. ¿Qué hace el hook useState?
+                                        </button>
+                                    </h2>
+                                    <div id="p1" class="accordion-collapse collapse" data-bs-parent="#accordionTeoria">
+                                        <div class="accordion-body p-4">
+                                            <p>
+                                                useState es un hook de React que permite agregar y administrar estado
+                                                dentro de componentes funcionales. El estado representa información
+                                                dinámica
+                                                que puede cambiar durante la ejecución de la aplicación y provoca la
+                                                re-renderización del componente cuando se actualiza.
+                                            </p>
+                                            <p>
+                                                Se utiliza para almacenar valores como contadores, formularios, datos de
+                                                usuario o cualquier información interactiva dentro del componente.
+                                            </p>
+                                            <p class="fst-italic text-secondary">
+                                                Ejemplo:
+                                            </p>
+                                            <ul>
+                                                <li>const [contador, setContador] = useState(0);</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 rounded shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed fw-semibold bg-white focus-ring focus-ring-primary"
+                                            data-bs-toggle="collapse" data-bs-target="#p2">
+                                            2. ¿Qué es un Fragmento?
+                                        </button>
+                                    </h2>
+                                    <div id="p2" class="accordion-collapse collapse" data-bs-parent="#accordionTeoria">
+                                        <div class="accordion-body p-4">
+                                            <P>
+                                                Un Fragmento en React permite agrupar múltiples elementos JSX sin
+                                                necesidad
+                                                de agregar un nodo adicional al DOM. Esto ayuda a mantener una
+                                                estructura
+                                                HTML más limpia y evita elementos innecesarios que podrían afectar el
+                                                diseño
+                                                o el rendimiento.
+                                            </P>
+                                            <P>
+                                                Se representa mediante la sintaxis &lt;&gt;&lt;/&gt; o utilizando
+                                                React.Fragment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 rounded shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed fw-semibold bg-white focus-ring focus-ring-primary"
+                                            data-bs-toggle="collapse" data-bs-target="#p3">
+                                            3. ¿Qué diferencia hay entre useContext y useState?
+                                        </button>
+                                    </h2>
+                                    <div id="p3" class="accordion-collapse collapse" data-bs-parent="#accordionTeoria">
+                                        <div class="accordion-body p-4">
+                                            <p>
+                                                <b>useState:</b> se utiliza para manejar estados locales dentro de un
+                                                componente específico. Su información solo afecta al componente donde
+                                                fue
+                                                declarado.
+                                            </p>
+                                            <p>
+                                                <b>useContext:</b> permite compartir datos entre múltiples componentes
+                                                sin necesidad de pasar propiedades manualmente, facilitando
+                                                la gestión de estados globales como autenticación, temas visuales o
+                                                configuraciones generales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 rounded shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed fw-semibold bg-white focus-ring focus-ring-primary"
+                                            data-bs-toggle="collapse" data-bs-target="#p4">
+                                            4. ¿Cuál es la estructura básica de un componente funcional?
+                                        </button>
+                                    </h2>
+                                    <div id="p4" class="accordion-collapse collapse" data-bs-parent="#accordionTeoria">
+                                        <div class="accordion-body p-4">
+                                            <p>
+                                                Un componente funcional es una función de JavaScript que retorna código
+                                                JSX, el cual describe la interfaz gráfica que React debe renderizar.
+                                            </p>
+                                            <p>
+                                                Puede recibir propiedades (props), manejar estados mediante hooks y
+                                                ejecutar lógica antes de renderizar la vista.
+                                            </p>
+                                            <p class="fst-italic text-secondary">Ejemplo:</p>
+                                            <ul>
+                                                <li>
+                                                    function Iniciar() { <br>
+                                                    &nbsp;&nbsp;return (&lt;h1&gt;Hola Mundo&lt;/h1&gt;); <br>
+                                                    }
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 fw-semibold">
+                Realizado por Anthony Dávila
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
